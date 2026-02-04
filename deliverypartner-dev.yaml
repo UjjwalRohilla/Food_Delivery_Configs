@@ -1,8 +1,9 @@
 spring:
   application:
     name: deliverypartner
-  mongodb:
-    uri: mongodb://food_deliverypartnerdb:27017/food_deliverypartnerdb
+  data:
+    mongodb:
+      uri: mongodb://food_deliverypartnerdb:27017/food_deliverypartnerdb
 
 server:
   port: 2002

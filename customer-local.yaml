@@ -1,8 +1,9 @@
 spring:
   application:
     name: customer
-  mongodb:
-    uri: mongodb://localhost:27017/food_customerdb
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/food_customerdb
 
 server:
   port: 2001
