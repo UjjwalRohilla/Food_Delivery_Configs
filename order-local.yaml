@@ -1,15 +1,15 @@
 spring:
   application:
-    name: deliverypartner
+    name: order
   data:
     redis:
       host: localhost
       port: 6379
     mongodb:
-      uri: mongodb://localhost:27017/food_deliverypartnerdb
+      uri: mongodb://localhost:27017/food_orderdb
 
 server:
-  port: 2002
+  port: 2003
 
 eureka:
   instance:
@@ -42,4 +42,4 @@ management:
 
 info:
   app:
-    name: "deliverypartner"
+    name: "customer"
