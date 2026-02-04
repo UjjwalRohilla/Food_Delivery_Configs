@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: deliverypartner
+  mongodb:
+    uri: mongodb://food_deliverypartnerdb:27017/food_deliverypartnerdb
+
+server:
+  port: 2002
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://eurekaserver:4002/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      access: unrestricted
+  info:
+    env:
+      enabled: true
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+    endpoint:
+      health:
+        probes:
+          enabled: true
+
+info:
+  app:
+    name: "deliverypartner"
