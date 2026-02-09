@@ -15,6 +15,9 @@ spring:
       properties:
         spring.json.add.type.headers: false
 
+jwt:
+  secret: uY9FJ3V0sKQe7mR2xB8A6ZpNwH1L4C5TtE0dSgOaXyI=
+  expiration: 900000
 server:
   port: 2001
 

@@ -53,6 +53,10 @@ management:
     liveness-state:
       enabled: true
 
+jwt:
+  secret: uY9FJ3V0sKQe7mR2xB8A6ZpNwH1L4C5TtE0dSgOaXyI=
+  expiration: 900000
+
 info:
   app:
     name: "customer"
